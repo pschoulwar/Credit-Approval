@@ -1,8 +1,9 @@
 from django.db import models
 
 # Create your models here.
+
 class Customers(models.Model):
-    customer_id = models.AutoField(primary_key =True)
+    customer_id = models.AutoField(primary_key =True, default=500)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     age = models.IntegerField(default = 18)

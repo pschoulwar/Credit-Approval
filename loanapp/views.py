@@ -65,7 +65,7 @@ class LoanEligibilityCheckAPIView(APIView):
             monthly_installment = None
         
         
-        remaining_income = monthly_salary - monthly_installment
+        remaining_income = monthly_salary - monthly_installment 
         
         can_loan_be_approved = interest_rate is not None and monthly_installment is not None and remaining_income > 0
         
